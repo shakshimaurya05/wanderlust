@@ -4,7 +4,7 @@
       display: flex;
       flex-wrap: wrap;
       align-items: center;
-padding-bottom: 1rem;
+      padding-bottom: 1rem;
     }
 
     #filters a {
@@ -47,7 +47,7 @@ padding-bottom: 1rem;
       <i class="fa-solid fa-sliders"></i> Filters
     </button>
   </div>
-  <div class="collapse d-lg-block" id="filtersCollapse">
+  <div class="collapse d-lg-block mb-3" id="filtersCollapse">
     <div id="filters">
       <a href="/listings/category/Trending">
         <div class="filter">
@@ -117,17 +117,19 @@ padding-bottom: 1rem;
           <p> Boats</p>
         </div>
       </a>
-
-
-
-      <div class="tax-toggle mb-lg-0">
+      <div class="tax-toggle mb-lg-0 ">
         <div class="form-check-reverse form-switch">
           <input class="form-check-input" type="checkbox" role="switch" id="switchCheckDefault">
           <label class="form-check-label" for="SwitchCheckDefault">Display total after Taxes</label>
         </div>
       </div>
+
     </div>
   </div>
+
+
+
+
 
   <div class="row row-cols-lg-3 row-cols-md-2 row-cols-sm-1">
     <% for( let listing of allListings){ %>
